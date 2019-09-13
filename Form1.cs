@@ -19,7 +19,18 @@ namespace BT1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            if (!string.IsNullOrEmpty(textBox1.Text) && !string.IsNullOrEmpty(textBox2.Text))
+            {
+                int a = int.Parse(textBox1.Text);
+                int b = int.Parse(textBox2.Text);
+                int d = a + b;
+            }
         }
     }
 }
