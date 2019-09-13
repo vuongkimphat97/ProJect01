@@ -24,7 +24,14 @@ namespace BT1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
+        
+            if(!string.IsNullOrEmpty(textBox1.Text))
+            {
+                int a = int.Parse(textBox1.Text);
+                int b = int.Parse(textBox2.Text);
+                int d = a + b;
+                label1.Text = d.ToString();
+            }
         }
     }
 }
